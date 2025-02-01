@@ -50,4 +50,4 @@ public class Calculator{
     public double standardDeviationOfArray(int[] arr) {
         return Math.sqrt(varianceOfArray(arr));
     }
-}
+} 
