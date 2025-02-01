@@ -47,4 +47,7 @@ public class Calculator{
         }
         return sumSquaredDiffs / arr.length;
     }
+    public double standardDeviationOfArray(int[] arr) {
+        return Math.sqrt(varianceOfArray(arr));
+    }
 }
