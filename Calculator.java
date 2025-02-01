@@ -14,4 +14,19 @@ public class Calculator{
         }
         return (double) a / b;
     }
+    public int[] fibonacci(int n) {
+        if (n <= 0) {
+            return new int[0]; 
+        }
+        
+        int[] fibSeries = new int[n];
+        fibSeries[0] = 0;
+        if (n > 1) {
+            fibSeries[1] = 1;
+            for (int i = 2; i < n; i++) {
+                fibSeries[i] = fibSeries[i - 1] + fibSeries[i - 2];
+            }
+        }
+        return fibSeries;
+    }
 }
